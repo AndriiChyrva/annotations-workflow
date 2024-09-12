@@ -1,0 +1,10 @@
+name: annotations-workflow
+run-name: ${{github.actor}} is running annotations-action
+on:
+  workflow_dispatch
+jobs:
+  annotations-job:
+    runs-on: ubuntu-latest
+    steps:
+      - id: run_action
+        uses: AndriiChyrva/annotations-action@v1.0.31
